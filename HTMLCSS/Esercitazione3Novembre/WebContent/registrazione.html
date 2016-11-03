@@ -11,16 +11,20 @@
 
 <form action="registrazione.asp">
 
-  Nome e Cognome: <input type="text" name="fname"><br>
+  Nome e Cognome: <input type="text" name="NomeCognome" value="NomeCognome"><br>
   
-  Sesso: <input type="radio" name="sesso" >M</input>
-  		 <input type="radio" name="sesso" >F</input><br>
+  Sesso: <input type="radio" name="sesso" value="M" >M</input>
+  		 <input type="radio" name="sesso" value="F">F</input><br>
   		 
-  Hai ricevuto notizia di questo tramite:<input type="checkbox">Internet </input>
-  										 <input type="checkbox"> Giornali </input>
-  										 <input type="checkbox">Televisione </input><br>
+  Hai ricevuto notizia di questo tramite:<input type="checkbox" name="Internet" value="Internet">Internet </input>
+  										 <input type="checkbox" name="Giornali" value="Giornali"> Giornali </input>
+  										 <input type="checkbox" name="Televisione" value="Televisione">Televisione </input><br>
   										 
-  Desideri inserire un messaggio sulla tua newslettere ogni: <input type="
+  Desideri inserire un messaggio sulla tua newslettere ogni: <select name=Frequenza> 
+															 <option value=settimana>Settimana</option>
+															 <option value=mese> Mese </option>
+															 <option value=anno> Anno</option>
+															 </select>
 </form> 
 
 </body>
