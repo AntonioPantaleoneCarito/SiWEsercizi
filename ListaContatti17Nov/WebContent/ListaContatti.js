@@ -33,17 +33,16 @@ function aggiungiHtml(contatto)
 	var tdMail=document.createElement("td");
 	tdMail.textContent = contatto.mail;
 	
+	
 	tr.appendChild(tdNome);
 	tr.appendChild(tdCognome);
 	tr.appendChild(tdNumero);
 	tr.appendChild(tdMail);
-	
-	
 	tBody.insertBefore(tr,ultimaRiga);
 	
 	
-	
 }
+
 function creaContatto()
 {
 	var nome=document.getElementById("Nome").value;
